@@ -1,4 +1,9 @@
 const StyleDictionary = require('style-dictionary');
+const fs = require('fs');
+const path = require('path');
+
+// 1. read files
+// 2. dist to
 
 const StyleDictionaryExtended = StyleDictionary.extend({
   source: ['tokens/**/*.json'],
@@ -27,4 +32,30 @@ const StyleDictionaryExtended = StyleDictionary.extend({
   },
 });
 
+function buildRawDist() {
+  const read = 'tokens';
+  const write = 'dist/raw';
+  let light = {};
+  let dark = {};
+
+  const filenames = fs.readdirSync(path.join(__dirname, read));
+  const files = filenames.map((f) => {
+    return JSON.parse(fs.readFileSync(path.resolve(__dirname, `${read}/${f}`)));
+  });
+
+  const { light: l, dark: d, global } = files[0].color;
+  light = { global, color: l };
+  dark = { global, color: d };
+
+  fs.writeFileSync(
+    path.resolve(__dirname, `./${write}/dark.json`),
+    JSON.stringify(light)
+  );
+  fs.writeFileSync(
+    path.resolve(__dirname, `./${write}/light.json`),
+    JSON.stringify(dark)
+  );
+}
+
+buildRawDist();
 StyleDictionaryExtended.buildAllPlatforms();
