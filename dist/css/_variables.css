@@ -1,13 +1,17 @@
 /**
  * Do not edit directly
- * Generated on Wed, 16 Nov 2022 18:47:58 GMT
+ * Generated on Wed, 16 Nov 2022 19:07:09 GMT
  */
 
 :root {
   --color-global-light: #ffffff;
   --color-global-dark: #000000;
   --color-light-green: #60964f;
+  --color-light-bg: #ffffff;
+  --color-light-fg: #000000;
   --color-dark-green: #00ff00;
+  --color-dark-bg: #000000;
+  --color-dark-fg: #ffffff;
   --size-font-sm: 16rem;
   --size-font-md: 21rem;
   --size-font-lg: 40rem;

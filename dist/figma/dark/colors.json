@@ -1,1 +1,1 @@
-{"global":{"light":{"value":"#ffffff"},"dark":{"value":"#000000"}},"color":{"green":{"value":"#00FF00"}}}
+{"global":{"light":{"value":"#ffffff"},"dark":{"value":"#000000"}},"color":{"green":{"value":"#00ff00"},"bg":{"value":"#000000"},"fg":{"value":"#ffffff"}}}
