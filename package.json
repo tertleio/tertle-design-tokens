@@ -1,0 +1,26 @@
+{
+  "name": "tertle-design-tokens",
+  "version": "0.1.0",
+  "description": "Consumer agnostic design tokens for tertle.io",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/tertleio/tertle-design-tokens.git"
+  },
+  "keywords": [
+    "tertle.io"
+    "tertleio"
+    "Tertle",
+    "Design",
+    "Tokens"
+  ],
+  "author": "Ryan Connaughton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tertleio/tertle-design-tokens/issues"
+  },
+  "homepage": "https://github.com/tertleio/tertle-design-tokens#readme"
+}
