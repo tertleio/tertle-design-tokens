@@ -4,7 +4,7 @@ const StyleDictionaryExtended = StyleDictionary.extend({
   source: ['tokens/**/*.json'],
   platforms: {
     css: {
-      transformGroup: 'scss',
+      transformGroup: 'css',
       buildPath: 'dist/css/',
       files: [
         {
