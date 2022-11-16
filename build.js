@@ -47,8 +47,8 @@ function buildFigmaDist() {
       fs.writeFileSync(write + '/light/colors.json', JSON.stringify(light));
       fs.writeFileSync(write + '/dark/colors.json', JSON.stringify(dark));
     } else {
-      fs.copyFileSync(`${read}/${filename}`, `${write}/dark/${filename}`);
       fs.copyFileSync(`${read}/${filename}`, `${write}/light/${filename}`);
+      fs.copyFileSync(`${read}/${filename}`, `${write}/dark/${filename}`);
     }
   });
 }
