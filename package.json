@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://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@github.com/tertleio/tertle-design-tokens.git"
+    "url": "git+https://github.com/tertleio/tertle-design-tokens.git"
   },
   "keywords": [
-    "tertle.io"
-    "tertleio"
+    "tertle.io",
+    "tertleio",
     "Tertle",
     "Design",
     "Tokens"
