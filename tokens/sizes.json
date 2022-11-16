@@ -1,6 +1,6 @@
 {
   "size": {
-    "font": {
+    "typography": {
       "xsm": { "values": "12px"},
       "sm" : { "value": "16px" },
       "md": { "value": "21px" },
