@@ -2,9 +2,6 @@ const StyleDictionary = require('style-dictionary');
 const fs = require('fs');
 const path = require('path');
 
-// 1. read files
-// 2. dist to
-
 const StyleDictionaryExtended = StyleDictionary.extend({
   source: ['tokens/**/*.json'],
   platforms: {
