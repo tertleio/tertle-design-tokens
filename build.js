@@ -57,7 +57,7 @@ function buildRawDist() {
     } else {
       for (const key in content) {
         light[key] = content;
-        dark[key] += content;
+        dark[key] = content;
       }
     }
   });
