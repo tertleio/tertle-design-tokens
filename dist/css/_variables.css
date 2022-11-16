@@ -1,13 +1,13 @@
 /**
  * Do not edit directly
- * Generated on Wed, 16 Nov 2022 11:40:32 GMT
+ * Generated on Wed, 16 Nov 2022 11:43:57 GMT
  */
 
 :root {
   --color-green-light: #60964f;
   --color-green-dark: #00ff00;
-  --size-font-small: 10rem;
-  --size-font-medium: 16rem;
-  --size-font-large: 24rem;
+  --size-font-sm: 10rem;
+  --size-font-md: 16rem;
+  --size-font-lg: 24rem;
   --size-font-base: 16rem;
 }
