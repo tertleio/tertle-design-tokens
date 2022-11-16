@@ -1,14 +1,10 @@
 {
-  "color": {
-    "global": {
-      "light": { "value": "#ffffff" },
-      "dark": { "value": "#000000" }
-    },
-    "light": {
-      "green": { "value": "#60964f" }
-    },
-    "dark": {
-      "green": { "value": "#00FF00" }
+  "dark": {  
+      "green": { "value": "#00FF00" },
+      "bg": { "value": "#000000" }
+  },
+  "light": {
+      "green": { "value": "#60964f" },
+      "bg": { "value": "#FFFFFF" }
     }
-  }
 }
