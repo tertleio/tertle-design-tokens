@@ -5,10 +5,15 @@
       "dark": { "value": "#000000" }
     },
     "light": {
-      "green": { "value": "#60964f" }
+      "green": { "value": "#60964f"},
+      "bg": { "value": "#ffffff" },
+      "fg": { "value": "#000000" }
+      
     },
     "dark": {
-      "green": { "value": "#00FF00" }
+      "green": { "value": "#00ff00" },
+      "bg": { "value": "#000000" },
+      "fg": { "value": "#ffffff" }
     }
   }
 }
