@@ -41,8 +41,8 @@ function buildFigmaDist() {
     if (filename === 'colors.json') {
       const colors = JSON.parse(fs.readFileSync(`${read}/${filename}`));
       const { global, light: l, dark: d } = colors.color;
-      light = { global, color: l };
-      dark = { global, color: d };
+      const light = { global, color: l };
+      const dark = { global, color: d };
 
       fs.writeFileSync(write + '/light/colors.json', JSON.stringify(light));
       fs.writeFileSync(write + '/dark/colors.json', JSON.stringify(dark));
