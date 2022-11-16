@@ -32,7 +32,31 @@ const StyleDictionaryExtended = StyleDictionary.extend({
   },
 });
 
-function buildRawDist() {
+function buildRawAsMultiFile() {
+  const read = path.resolve(__dirname, `./tokens`);
+  const write = path.resolve(__dirname, `./dist`);
+
+  const filenames = fs.readdirSync(read);
+  filenames.forEach((filename) => {
+    if (filename === 'colors.json') {
+      // read and write the file
+      const colors = JSON.parse(fs.readFileSync(`${read}/${filename}`));
+      console.log(colors);
+      const { global, light: l, dark: d } = colors.color;
+      light = { global, color: l };
+      dark = { global, color: d };
+      console.log('light', light);
+      console.log('light', dark);
+
+      fs.writeFileSync(write + '/raw/light/colors.json', JSON.stringify(light));
+      fs.writeFileSync(write + '/raw/dark/colors.json', JSON.stringify(dark));
+    } else {
+      fs.copyFileSync(`${read}/${filename}`, `${write}/${filename}`);
+    }
+  });
+}
+
+function buildRawAsOneFile() {
   const read = 'tokens';
   const write = 'dist/raw';
 
@@ -72,5 +96,6 @@ function buildRawDist() {
   );
 }
 
-buildRawDist();
+// buildRawDist();
+buildRawAsMultiFile();
 StyleDictionaryExtended.buildAllPlatforms();
