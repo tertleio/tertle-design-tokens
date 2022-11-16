@@ -32,72 +32,67 @@ const StyleDictionaryExtended = StyleDictionary.extend({
   },
 });
 
-function buildRawAsMultiFile() {
+function buildFigmaDist() {
   const read = path.resolve(__dirname, `./tokens`);
-  const write = path.resolve(__dirname, `./dist`);
-
+  const write = path.resolve(__dirname, `./dist/figma`);
   const filenames = fs.readdirSync(read);
+
   filenames.forEach((filename) => {
     if (filename === 'colors.json') {
-      // read and write the file
       const colors = JSON.parse(fs.readFileSync(`${read}/${filename}`));
-      console.log(colors);
       const { global, light: l, dark: d } = colors.color;
       light = { global, color: l };
       dark = { global, color: d };
-      console.log('light', light);
-      console.log('light', dark);
 
-      fs.writeFileSync(write + '/raw/light/colors.json', JSON.stringify(light));
-      fs.writeFileSync(write + '/raw/dark/colors.json', JSON.stringify(dark));
+      fs.writeFileSync(write + '/light/colors.json', JSON.stringify(light));
+      fs.writeFileSync(write + '/dark/colors.json', JSON.stringify(dark));
     } else {
-      console.log('copying files');
-      fs.copyFileSync(`${read}/${filename}`, `${write}/raw/dark/${filename}`);
-      fs.copyFileSync(`${read}/${filename}`, `${write}/raw/light/${filename}`);
+      fs.copyFileSync(`${read}/${filename}`, `${write}/dark/${filename}`);
+      fs.copyFileSync(`${read}/${filename}`, `${write}/light/${filename}`);
     }
   });
 }
 
-function buildRawAsOneFile() {
-  const read = 'tokens';
-  const write = 'dist/raw';
+// function buildJson() {
+//   const read = 'tokens';
+//   const write = 'dist/raw';
 
-  const filenames = fs.readdirSync(path.join(__dirname, read));
-  const files = filenames.map((filename) => {
-    return {
-      name: filename,
-      content: JSON.parse(
-        fs.readFileSync(path.resolve(__dirname, `${read}/${filename}`))
-      ),
-    };
-  });
+//   const filenames = fs.readdirSync(path.join(__dirname, read));
+//   const files = filenames.map((filename) => {
+//     return {
+//       name: filename,
+//       content: JSON.parse(
+//         fs.readFileSync(path.resolve(__dirname, `${read}/${filename}`))
+//       ),
+//     };
+//   });
 
-  let light = {};
-  let dark = {};
+//   let light = {};
+//   let dark = {};
 
-  files.forEach(({ name, content }) => {
-    if (name === 'colors.json') {
-      const { global, light: l, dark: d } = content.color;
-      light = { global, color: l };
-      dark = { global, color: d };
-    } else {
-      for (const key in content) {
-        light[key] = content;
-        dark[key] = content;
-      }
-    }
-  });
+//   files.forEach(({ name, content }) => {
+//     if (name === 'colors.json') {
+//       const { global, light: l, dark: d } = content.color;
+//       light = { global, color: l };
+//       dark = { global, color: d };
+//     } else {
+//       for (const key in content) {
+//         light[key] = content;
+//         dark[key] = content;
+//       }
+//     }
+//   });
 
-  fs.writeFileSync(
-    path.resolve(__dirname, `./${write}/dark/_variables.json`),
-    JSON.stringify(light)
-  );
-  fs.writeFileSync(
-    path.resolve(__dirname, `./${write}/light/_variables.json`),
-    JSON.stringify(dark)
-  );
-}
+//   fs.writeFileSync(
+//     path.resolve(__dirname, `./${write}/dark/_variables.json`),
+//     JSON.stringify(light)
+//   );
+//   fs.writeFileSync(
+//     path.resolve(__dirname, `./${write}/light/_variables.json`),
+//     JSON.stringify(dark)
+//   );
+// }
 
-// buildRawDist();
-buildRawAsMultiFile();
+// // buildRawDist();
+buildFigmaDist();
 StyleDictionaryExtended.buildAllPlatforms();
