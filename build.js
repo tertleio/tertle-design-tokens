@@ -35,17 +35,32 @@ const StyleDictionaryExtended = StyleDictionary.extend({
 function buildRawDist() {
   const read = 'tokens';
   const write = 'dist/raw';
+
+  const filenames = fs.readdirSync(path.join(__dirname, read));
+  const files = filenames.map((filename) => {
+    return {
+      name: filename,
+      content: JSON.parse(
+        fs.readFileSync(path.resolve(__dirname, `${read}/${filename}`))
+      ),
+    };
+  });
+
   let light = {};
   let dark = {};
 
-  const filenames = fs.readdirSync(path.join(__dirname, read));
-  const files = filenames.map((f) => {
-    return JSON.parse(fs.readFileSync(path.resolve(__dirname, `${read}/${f}`)));
+  files.forEach(({ name, content }) => {
+    if (name === 'colors.json') {
+      const { global, light: l, dark: d } = content.color;
+      light = { global, color: l };
+      dark = { global, color: d };
+    } else {
+      for (const key in content) {
+        light[key] = content;
+        dark[key] += content;
+      }
+    }
   });
-
-  const { light: l, dark: d, global } = files[0].color;
-  light = { global, color: l };
-  dark = { global, color: d };
 
   fs.writeFileSync(
     path.resolve(__dirname, `./${write}/dark.json`),
