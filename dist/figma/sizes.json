@@ -1,12 +1,12 @@
 {
   "size": {
-    "typography": {
-      "xsm": { "values": "12px"},
+    "font": {
+      "xsm": { "value": "12px"},
       "sm" : { "value": "16px" },
       "md": { "value": "21px" },
       "lg" : { "value": "40px" },
       "xlg" : { "value": "50px" },
-      "base"  : { "value": "{size.typography.md.value}" }
+      "base"  : { "value": "{size.font.md.value}" }
     }
   }
 }
