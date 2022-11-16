@@ -41,11 +41,12 @@ function buildFigmaDist() {
       const light = { global, color: l };
       const dark = { global, color: d };
 
-      fs.writeFileSync(write + '/light/colors.json', JSON.stringify(light));
-      fs.writeFileSync(write + '/dark/colors.json', JSON.stringify(dark));
+      fs.writeFileSync(write + '/colors-global.json', JSON.stringify(global));
+      fs.writeFileSync(write + '/colors-light.json', JSON.stringify(light));
+      fs.writeFileSync(write + '/colors-dark.json', JSON.stringify(dark));
     } else {
-      fs.copyFileSync(`${read}/${filename}`, `${write}/light/${filename}`);
-      fs.copyFileSync(`${read}/${filename}`, `${write}/dark/${filename}`);
+      fs.copyFileSync(`${read}/${filename}`, `${write}/${filename}`);
+      fs.copyFileSync(`${read}/${filename}`, `${write}/${filename}`);
     }
   });
 }
