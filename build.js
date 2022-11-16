@@ -51,7 +51,9 @@ function buildRawAsMultiFile() {
       fs.writeFileSync(write + '/raw/light/colors.json', JSON.stringify(light));
       fs.writeFileSync(write + '/raw/dark/colors.json', JSON.stringify(dark));
     } else {
-      fs.copyFileSync(`${read}/${filename}`, `${write}/${filename}`);
+      console.log('copying files');
+      fs.copyFileSync(`${read}/${filename}`, `${write}/raw/dark/${filename}`);
+      fs.copyFileSync(`${read}/${filename}`, `${write}/raw/light/${filename}`);
     }
   });
 }
