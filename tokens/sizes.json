@@ -1,9 +1,11 @@
 {
   "size": {
     "font": {
-      "sm" : { "value": "10px" },
-      "md": { "value": "16px" },
-      "lg" : { "value": "15px" },
+      "xsm": { "values": "12px"},
+      "sm" : { "value": "16px" },
+      "md": { "value": "21px" },
+      "lg" : { "value": "40px" },
+      "xlg" : { "value": "50px" },
       "base"  : { "value": "{size.font.md.value}" }
     }
   }

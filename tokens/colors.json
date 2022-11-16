@@ -1,8 +1,14 @@
 {
   "color": {
-    "green": {
-      "light": { "value": "#eb3333" },
-      "dark": { "value": "#00FF00" }
+    "global": {
+      "light": { "value": "#ffffff" },
+      "dark": { "value": "#000000" }
+    },
+    "light": {
+      "green": { "value": "#60964f" }
+    },
+    "dark": {
+      "green": { "value": "#00FF00" }
     }
   }
 }
