@@ -63,11 +63,11 @@ function buildRawDist() {
   });
 
   fs.writeFileSync(
-    path.resolve(__dirname, `./${write}/dark.json`),
+    path.resolve(__dirname, `./${write}/dark/_variables.json`),
     JSON.stringify(light)
   );
   fs.writeFileSync(
-    path.resolve(__dirname, `./${write}/light.json`),
+    path.resolve(__dirname, `./${write}/light/_variables.json`),
     JSON.stringify(dark)
   );
 }
