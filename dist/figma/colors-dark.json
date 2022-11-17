@@ -1,1 +1,1 @@
-{"global":{"light":{"value":"#ffffff"},"dark":{"value":"#000000"}},"color":{"green":{"value":"#00ff00"},"bg":{"value":"#000000"},"fg":{"value":"#ffffff"}}}
+{"global":{"lightest":{"value":"#FFFFFF"},"darkest":{"value":"#000000"}},"color":{"bg":{"value":"{color.global.darkest}"},"fg":{"value":"{color.global.lightest"},"primary":{"value":"#00ff00"},"gray100":{"value":"#121212"},"gray200":{"value":"#313131"},"gray400":{"value":"#6F6F6F"},"gray600":{"value":"#999999"},"gray800":{"value":"#CCCCCC"},"grayg900":{"value":"#E5E5E5"}}}
