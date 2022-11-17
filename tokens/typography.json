@@ -6,7 +6,8 @@
       "sm" : { "value": "16px" },
       "md": { "value": "24px" },
       "lg" : { "value": "38px" },
-      "xxlg" : { "value": "50px" }
+      "xlg" : { "value": "50px" },
+      "xxlg" : { "value": "62px" }
     }
   }
 }
