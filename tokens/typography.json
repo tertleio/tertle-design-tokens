@@ -1,11 +1,12 @@
 {
   "font": {
     "size": {
-      "xsm": { "value": "12px"},
+      "xxsm": { "value": "12px"},          
+      "xsm": { "value": "14px"},
       "sm" : { "value": "16px" },
       "md": { "value": "21px" },
-      "lg" : { "value": "40px" },
-      "xlg" : { "value": "50px" }
+      "lg" : { "value": "38px" },
+      "xxlg" : { "value": "50px" }
     }
   }
 }
