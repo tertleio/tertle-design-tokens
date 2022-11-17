@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 17 Nov 2022 11:17:43 GMT
+ * Generated on Thu, 17 Nov 2022 11:28:43 GMT
  */
 
 :root {
@@ -29,5 +29,6 @@
   --font-size-sm: 16px;
   --font-size-md: 24px;
   --font-size-lg: 38px;
-  --font-size-xxlg: 50px;
+  --font-size-xlg: 50px;
+  --font-size-xxlg: 62px;
 }
