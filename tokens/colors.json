@@ -5,9 +5,9 @@
       "darkest": { "value": "#000000" }
     },
     "light": {
-      "green": { "value": "#60964f"},
-      "bg": { "value": "#FFFFFF" },
-      "fg": { "value": "#000000" },
+      "primary": { "value": "#60964f"},
+      "bg": { "value": "{color.global.lightest}" },
+      "fg": { "value": "{color.global.darkest" },
       "gray100": { "value": "#AB123" },
       "gray200": { "value": "#E5E5E5" },
       "gray400": { "value": "#CCCCCC" },
@@ -17,7 +17,9 @@
       
     },
     "dark": {
-      "green": { "value": "#00ff00" },
+      "bg": { "value": "{color.global.darkest}" },
+      "fg": { "value": "{color.global.lightest" },
+      "primary": { "value": "#00ff00" },
       "gray100": { "value": "#121212" },
       "gray200": { "value": "#313131" },
       "gray400": { "value": "#6F6F6F" },
