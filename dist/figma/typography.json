@@ -2,8 +2,8 @@
   "font": {
     "size": {
       "xxsm": { "value": "12px"},          
-      "xsm": { "value": "15px"},
-      "sm" : { "value": "18px" },
+      "xsm": { "value": "14px"},
+      "sm" : { "value": "16px" },
       "md": { "value": "24px" },
       "lg" : { "value": "38px" },
       "xxlg" : { "value": "50px" }
