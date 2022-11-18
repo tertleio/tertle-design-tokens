@@ -1,14 +1,15 @@
 /**
  * Do not edit directly
- * Generated on Thu, 17 Nov 2022 16:26:21 GMT
+ * Generated on Fri, 18 Nov 2022 11:49:16 GMT
  */
 
 :root {
   --color-global-lightest: #ffffff;
   --color-global-darkest: #000000;
   --color-light-primary: #60964f;
-  --color-light-bg: #ffffff;
-  --color-light-fg: #000000;
+  --color-light-seconary: #000000;
+  --color-light-bg: #eeeeee;
+  --color-light-fg: #ffffff;
   --color-light-gray100: #eeeeee;
   --color-light-gray200: #e5e5e5;
   --color-light-gray400: #cccccc;
@@ -16,8 +17,9 @@
   --color-light-gray800: #6f6f6f;
   --color-light-gray900: #313131;
   --color-dark-bg: #000000;
-  --color-dark-fg: #000000;
+  --color-dark-fg: #313131;
   --color-dark-primary: #00ff00;
+  --color-dark-seconary: #ffffff;
   --color-dark-gray100: #121212;
   --color-dark-gray200: #313131;
   --color-dark-gray400: #6f6f6f;
