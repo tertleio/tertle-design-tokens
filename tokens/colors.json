@@ -7,7 +7,7 @@
     "light": {
       "primary": { "value": "#60964f"},
       "seconary": { "value": "#000000"},
-      "bg": { "value": "#eeeeee" },
+      "bg": { "value": "#F9F9F9" },
       "fg": { "value": "#ffffff" },
       "gray100": { "value": "#EEEEEE" },
       "gray200": { "value": "#E5E5E5" },
