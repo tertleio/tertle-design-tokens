@@ -19,7 +19,7 @@
     },
     "dark": {
       "bg": { "value": "#000000" },
-      "fg": { "value": "#313131" },
+      "fg": { "value": "#121212" },
       "primary": { "value": "#00ff00" },
       "seconary": { "value": "#ffffff"},
       "gray100": { "value": "#121212" },
