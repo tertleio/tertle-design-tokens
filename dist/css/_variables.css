@@ -1,11 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Sat, 19 Nov 2022 12:14:58 GMT
+ * Generated on Sat, 19 Nov 2022 13:58:14 GMT
  */
 
 :root {
   --color-global-lightest: #ffffff;
   --color-global-darkest: #000000;
+  --color-light-base: #ffffff;
   --color-light-primary: #60964f;
   --color-light-seconary: #000000;
   --color-light-bg: #f6f8fa;
@@ -17,6 +18,7 @@
   --color-light-gray600: #999999;
   --color-light-gray800: #6f6f6f;
   --color-light-gray900: #313131;
+  --color-dark-base: #000000;
   --color-dark-bg: #0a0a0a;
   --color-dark-fg: #181818;
   --color-dark-primary: #00ff00;
