@@ -22,7 +22,7 @@
     "dark": {
       "base": { "value": "#000000" },
       "bg": { "value": "#0A0A0A" },
-      "fg": { "value": "#181818" },
+      "fg": { "value": "#121212" },
       "primary": { "value": "#00ff00" },
       "seconary": { "value": "#ffffff"},
       "shadow1": { "value": "#000000"},
