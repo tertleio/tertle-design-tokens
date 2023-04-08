@@ -1,0 +1,30 @@
+/**
+ * Do not edit directly
+ * Generated on Sat, 08 Apr 2023 11:54:35 GMT
+ */
+
+:root {
+  --global-lightest: #FFFFFF;
+  --global-darkest: #000000;
+  --color-base: #ffffff;
+  --color-bg: #f6f8fa;
+  --color-fg: #ffffff;
+  --color-primary: #60964f;
+  --color-seconary: #000000;
+  --color-shadow1: #eeeeee;
+  --color-gray100: #eeeeee;
+  --color-gray200: #e5e5e5;
+  --color-gray400: #cccccc;
+  --color-gray600: #999999;
+  --color-gray800: #6f6f6f;
+  --color-gray900: #313131;
+  --lightest: #FFFFFF;
+  --darkest: #000000;
+  --font-size-xxsm: 12px;
+  --font-size-xsm: 14px;
+  --font-size-sm: 16px;
+  --font-size-md: 24px;
+  --font-size-lg: 38px;
+  --font-size-xlg: 50px;
+  --font-size-xxlg: 62px;
+}
