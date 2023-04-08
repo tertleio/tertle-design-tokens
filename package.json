@@ -24,8 +24,7 @@
     "url": "https://github.com/tertleio/tertle-design-tokens/issues"
   },
   "homepage": "https://github.com/tertleio/tertle-design-tokens#readme",
-  "dependencies": {
-    "style-dictionary": "^3.7.1"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "style-dictionary": "^3.7.2"
+  }
 }
