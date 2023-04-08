@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 08 Apr 2023 13:21:54 GMT
+ * Generated on Sat, 08 Apr 2023 13:41:21 GMT
  */
 
 export const GlobalLightest = "#FFFFFF";

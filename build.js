@@ -13,7 +13,7 @@ const StyleDictionaryExtended = StyleDictionary.extend({
       buildPath: 'tokens/es5/',
       files: [
         {
-          destination: '_variables.js',
+          destination: 'index.js',
           format: 'javascript/module',
         },
       ],
@@ -23,7 +23,7 @@ const StyleDictionaryExtended = StyleDictionary.extend({
       buildPath: 'tokens/es6/',
       files: [
         {
-          destination: '_variables.js',
+          destination: 'index.js',
           format: 'javascript/es6',
         },
       ],
