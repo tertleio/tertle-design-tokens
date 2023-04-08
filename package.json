@@ -15,8 +15,8 @@
     "tertle.io",
     "tertleio",
     "Tertle",
-    "Design",
-    "Tokens"
+    "Tertle Design Tokens",
+    "Tertle Design"
   ],
   "author": "Ryan Connaughton",
   "license": "ISC",
@@ -26,5 +26,6 @@
   "homepage": "https://github.com/tertleio/tertle-design-tokens#readme",
   "dependencies": {
     "style-dictionary": "^3.7.1"
-  }
+  },
+  "devDependencies": {}
 }
