@@ -1,0 +1,30 @@
+{
+  "light": {
+    "base": "#FFFFFF",
+    "primary": "#60964f",
+    "seconary": "#000000",
+    "bg": "#F6F8FA",
+    "fg": "#ffffff",
+    "shadow1": "#EEEEEE",
+    "gray100": "#EEEEEE",
+    "gray200": "#E5E5E5",
+    "gray400": "#CCCCCC",
+    "gray600": "#999999",
+    "gray800": "#6F6F6F",
+    "gray900": "#313131"
+  },
+  "dark": {
+    "base": "#000000",
+    "bg": "#0A0A0A",
+    "fg": "#121212",
+    "primary": "#00ff00",
+    "seconary": "#ffffff",
+    "shadow1": "#000000",
+    "gray100": "#121212",
+    "gray200": "#313131",
+    "gray400": "#6F6F6F",
+    "gray600": "#999999",
+    "gray800": "#CCCCCC",
+    "gray900": "#E5E5E5"
+  }
+}

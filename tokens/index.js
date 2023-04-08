@@ -1,1 +1,4 @@
-export * as es6 from './es6';
+// export * as default from './es6';
+export const tokens = {
+  colors: JSON.parse('./json/colors-tw.json'),
+};
