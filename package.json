@@ -1,6 +1,6 @@
 {
   "name": "tertle-design-tokens",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Consumer agnostic design tokens for tertle.io",
   "main": "build.js",
   "scripts": {
