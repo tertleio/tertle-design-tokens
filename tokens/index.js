@@ -1,4 +1,3 @@
 // export * as default from './es6';
-export const tokens = {
-  colors: JSON.parse('./json/colors-tw.json'),
-};
+export * as colors from './json/colors-tw.json';
+export * as typography from './json/typography.json';
