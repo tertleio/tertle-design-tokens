@@ -2,9 +2,32 @@ const StyleDictionary = require('style-dictionary');
 const fs = require('fs');
 const path = require('path');
 
+// const baseTransforms = ['attribute/cti', 'size/px'];
+// const jsTransforms = baseTransforms.concat(['name/cti/pascal']);
+
 const StyleDictionaryExtended = StyleDictionary.extend({
   source: ['tokens/**/*.json'],
   platforms: {
+    js: {
+      transformGroup: 'js',
+      buildPath: 'tokens/es5/',
+      files: [
+        {
+          destination: '_variables.js',
+          format: 'javascript/module',
+        },
+      ],
+    },
+    js: {
+      transformGroup: 'js',
+      buildPath: 'tokens/es6/',
+      files: [
+        {
+          destination: '_variables.js',
+          format: 'javascript/es6',
+        },
+      ],
+    },
     css: {
       transformGroup: 'css',
       buildPath: 'tokens/css/',
