@@ -6,28 +6,8 @@ const path = require('path');
 // const jsTransforms = baseTransforms.concat(['name/cti/pascal']);
 
 const StyleDictionaryExtended = StyleDictionary.extend({
-  source: ['tokens/**/*.json'],
+  source: ['src/**/*.json'],
   platforms: {
-    js: {
-      transformGroup: 'js',
-      buildPath: 'tokens/es5/',
-      files: [
-        {
-          destination: 'index.js',
-          format: 'javascript/module',
-        },
-      ],
-    },
-    js: {
-      transformGroup: 'js',
-      buildPath: 'tokens/es6/',
-      files: [
-        {
-          destination: 'index.js',
-          format: 'javascript/es6',
-        },
-      ],
-    },
     css: {
       transformGroup: 'css',
       buildPath: 'tokens/css/',
@@ -48,13 +28,33 @@ const StyleDictionaryExtended = StyleDictionary.extend({
         },
       ],
     },
+    // js: {
+    //   transform: 'js',
+    //   buildPath: 'tokens/es5/',
+    //   files: [
+    //     {
+    //       destination: 'index.js',
+    //       format: 'javascript/module',
+    //     },
+    //   ],
+    // },
+    // js: {
+    //   transform: 'js',
+    //   buildPath: 'tokens/es6/',
+    //   files: [
+    //     {
+    //       destination: 'index.js',
+    //       format: 'javascript/es6',
+    //     },
+    //   ],
+    // },
     // ...
   },
 });
 
-function buildJson() {
+function buildFigma() {
   const read = path.resolve(__dirname, `./src`);
-  const write = path.resolve(__dirname, `./tokens/json`);
+  const write = path.resolve(__dirname, `./tokens/figma`);
   const filenames = fs.readdirSync(read);
 
   filenames.forEach((filename) => {
@@ -74,5 +74,5 @@ function buildJson() {
   });
 }
 
-buildJson();
+buildFigma();
 StyleDictionaryExtended.buildAllPlatforms();

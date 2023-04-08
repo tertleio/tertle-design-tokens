@@ -1,23 +1,33 @@
 
 // Do not edit directly
-// Generated on Sat, 08 Apr 2023 13:41:30 GMT
+// Generated on Sat, 08 Apr 2023 16:36:41 GMT
 
-$global-lightest: #FFFFFF;
-$global-darkest: #000000;
-$color-base: #ffffff;
-$color-bg: #f6f8fa;
-$color-fg: #ffffff;
-$color-primary: #60964f;
-$color-seconary: #000000;
-$color-shadow1: #eeeeee;
-$color-gray100: #eeeeee;
-$color-gray200: #e5e5e5;
-$color-gray400: #cccccc;
-$color-gray600: #999999;
-$color-gray800: #6f6f6f;
-$color-gray900: #313131;
-$lightest: #FFFFFF;
-$darkest: #000000;
+$color-global-lightest: #ffffff;
+$color-global-darkest: #000000;
+$color-light-base: #ffffff;
+$color-light-primary: #60964f;
+$color-light-secondary: #000000;
+$color-light-bg: #f6f8fa;
+$color-light-fg: #ffffff;
+$color-light-shadow1: #eeeeee;
+$color-light-gray100: #eeeeee;
+$color-light-gray200: #e5e5e5;
+$color-light-gray400: #cccccc;
+$color-light-gray600: #999999;
+$color-light-gray800: #6f6f6f;
+$color-light-gray900: #313131;
+$color-dark-base: #000000;
+$color-dark-bg: #0a0a0a;
+$color-dark-fg: #121212;
+$color-dark-primary: #00ff00;
+$color-dark-secondary: #ffffff;
+$color-dark-shadow1: #000000;
+$color-dark-gray100: #121212;
+$color-dark-gray200: #313131;
+$color-dark-gray400: #6f6f6f;
+$color-dark-gray600: #999999;
+$color-dark-gray800: #cccccc;
+$color-dark-gray900: #e5e5e5;
 $font-size-xxsm: 12px;
 $font-size-xsm: 14px;
 $font-size-sm: 16px;
