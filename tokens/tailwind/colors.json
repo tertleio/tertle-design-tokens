@@ -20,9 +20,9 @@
     "dark": "#EC3D3D"
   },
   "blue": {
-    "DEFAULT": "#4A80B4",
-    "light": "#4A80B4",
-    "dark": "#4A80B4"
+    "DEFAULT": "#2A6894",
+    "light": "#2A6894",
+    "dark": "#4B99E9"
   },
   "gray": {
     "100": "#FAFAFA",
