@@ -4,18 +4,26 @@
     "light": "#FFFFFF",
     "dark": "#000000"
   },
-  "primary": {
+  "green": {
     "DEFAULT": "#60964f",
     "light": "#60964f",
     "dark": "#00ff00"
   },
-  "secondary": {
-    "DEFAULT": "#FFFFFF",
-    "light": "#000000",
-    "dark": "#ffffff"
+  "orange": {
+    "DEFAULT": "#C97C00",
+    "light": "#C97C00",
+    "dark": "#FBA00D"
   },
-  "white": "#FFFFFF",
-  "black": "#000000",
+  "red": {
+    "DEFAULT": "#BC2929",
+    "light": "#BC2929",
+    "dark": "#EC3D3D"
+  },
+  "blue": {
+    "DEFAULT": "#4A80B4",
+    "light": "#4A80B4",
+    "dark": "#4A80B4"
+  },
   "gray": {
     "100": "#FAFAFA",
     "200": "#EEEEEE",
