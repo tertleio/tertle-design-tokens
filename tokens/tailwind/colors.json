@@ -11,6 +11,11 @@
     "light": "#C97C00",
     "dark": "#FBA00D"
   },
+  "yellow": {
+    "DEFAULT": "#D7AE31",
+    "light": "#D7AE31",
+    "dark": "#F1C232"
+  },
   "red": {
     "DEFAULT": "#BC2929",
     "light": "#BC2929",
